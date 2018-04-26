@@ -23,7 +23,7 @@ public class JsonFood {
             JSONObject item = jsonArray.getJSONObject(i);
 
             Food food = new Food();
-            food.getTitle();
+            food.setTitle(item.getString("title"));
             foodList.add(food);
         }
 
